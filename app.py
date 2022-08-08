@@ -1,11 +1,10 @@
-from cProfile import label
 import streamlit as st
 import style
 import numpy as np
 import pandas as pd
 import framework
 from framework import *
-from PIL import Image
+# from PIL import Image
 
 
 st.markdown(
