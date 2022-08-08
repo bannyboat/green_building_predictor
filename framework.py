@@ -10,7 +10,7 @@ Note: this algorithm works for one project. If you want to predict several proje
 you'll have to modify it.
 """
 import numpy as np
-import pickle
+import joblib
 from sklearn import svm
 # import matplotlib.pyplot as plt
 
@@ -597,7 +597,7 @@ def call_svr(input_data, problem="FC"):
     
     with open(f"data/svr_config/{problem}/svr_model.pkl", "rb") as svr_model:
         # Call load method to deserialze
-        svr = pickle.load(svr_model)
+        svr = joblib.load(svr_model)
     prediction = svr.predict(input_data).reshape(-1, 1)
     return prediction
 
@@ -609,7 +609,7 @@ def call_nn(input_data, problem="FC"):  # problem is a srting that tell NN what 
     # Loading DNN config according to the "problem"
     with open(f"data/nn_config/{problem}/nn_model.pkl", "rb") as nn_model:
             # Call load method to deserialze
-            nn = pickle.load(nn_model)
+            nn = joblib.load(nn_model)
     dnn_output = nn.predict(input_data).reshape(-1, 1)   
     
     return dnn_output
