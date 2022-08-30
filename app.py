@@ -31,7 +31,7 @@ st.markdown(
 
 
 style.display_app_header(main_txt='Green Building Project Cost & Duration Predictor 🔭',
-                         sub_txt='An Artificial Intelligence-based predictor for green building project cost and duration',is_sidebar=False)
+                         sub_txt='Artificial Intelligence-based predictor for green building project cost and duration',is_sidebar=False)
 
 # image = Image.open('img.jpg')
 # new_image = image.resize((600, 600))
