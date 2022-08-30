@@ -31,7 +31,7 @@ st.markdown(
 
 
 style.display_app_header(main_txt='Green Building Project Cost & Duration Predictor 🔭',
-                         sub_txt='An Artificial Intelligence based predictor for green building project cost and duration',is_sidebar=False)
+                         sub_txt='An Artificial Intelligence-based predictor for green building project cost and duration',is_sidebar=False)
 
 # image = Image.open('img.jpg')
 # new_image = image.resize((600, 600))
@@ -93,7 +93,7 @@ X_display = [PT, AS, AT, OB, PD, SM, SY, SS, MW, EU, WU, HWB, IA, CD[0], HD[0], 
 columns = ["PT", "AS", "AT", "OB", "PD", "SM", "SY", "SS", "MW", "EU", "WU", "HWB", "IA", "CD", "HD", "RD"]
 df = pd.DataFrame([X_display],columns=columns)
 #Display Dataframe 
-st.markdown("### **Features and inputed values table**")
+st.markdown("### **Features and Inputted values table**")
 st.dataframe(df)
 
 # J = [1,200000.00,1.00,569.90,1.10,3,1999,65.00,23.00,83.00,50.00,92.00,5.00,23,6,9]
@@ -106,7 +106,7 @@ prediction = framework.predict(X, problem)
 if(problem=="FC"):
     st.markdown("### Predicted Final Cost: HK$ "+str(np.round(prediction[0],10)[0]) + "M")
 else:
-    st.markdown("### Predicted project Duration: "+str(np.round(prediction[0],2)[0]) + " Yrs")
+    st.markdown("### Predicted Actual Duration: "+str(np.round(prediction[0],2)[0]) + " Yrs")
 
 
 # st.metric(label="Predicted " + problem_selected + " in HNK",value=np.round(prediction[0],2))
