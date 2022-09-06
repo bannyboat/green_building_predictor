@@ -40,7 +40,7 @@ style.display_app_header(main_txt='Green Building Project Cost & Duration Predic
 
 style.display_app_header(main_txt='Building Types',
                          sub_txt="""
-                         <p> 1. Commercial: Commerce and industry, office buildings </p>
+                         <p> 1. Commercial: Commerce and industrial, office buildings </p>
                          <p> 2. Education: Schools and universities </p>
                          <p> 3. Government: Public safety facilities (e.g fire stations, ambulance facilities), law and order facilities (e.g court buildings) </p>
                          <p> 4. Mixed: Buildings that combine several funtions, such as residential and commercial, at once.
@@ -65,7 +65,7 @@ with st.sidebar:
     ATDic = {"Floor Area":0,"Site Area":1}
     AT = ATDic[AT_selected]
     OB = st.number_input("Enter Original Budget in Million HKD",value=135.9425,min_value = 0.1,step= 0.0001)
-    PD = st.number_input("Enter Plan Duration in years",value=1.74,min_value = 0.1)
+    PD = st.number_input("Enter Planned Duration in years",value=1.74,min_value = 0.1)
     SM_selected = st.selectbox("Select Start Month",("January", "February","March","April","May","June","July","August","September","October","November","December"))
     SMDic = {"January":1, "February":2,"March":3,"April":4,"May":5,"June":6,"July":7,"August":8,"September":9,"October":10,"November":11,"December":12}
     SM = SMDic[SM_selected]
