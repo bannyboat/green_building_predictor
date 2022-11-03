@@ -4,5 +4,6 @@ scikit-learn==1.1.1
 sklearn==0.0
 streamlit==1.11.0
 joblib==1.1.0
-protobuf~=3.19.0
+protobuf~=3.20.1
 pip~=22.3
+streamlit~=1.14.0
