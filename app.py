@@ -33,7 +33,7 @@ st.markdown(
 
 
 style.display_app_header(main_txt='Green Building Project Cost & Duration Predictor 🔭',
-                         sub_txt='Artificial Intelligence-based predictor for green building project cost and duration',is_sidebar=False)
+                         sub_txt='Machine Learning-based predictor for green building project cost and duration',is_sidebar=False)
 
 # image = Image.open('img.jpg')
 # new_image = image.resize((600, 600))
@@ -49,7 +49,7 @@ style.display_app_header(main_txt='Building Types',
                          <p> 5. Residential; Hostels, hotels and quarters.
                          <p> 6. Other; Buildings that do not fall for any other category. </p>
                          """, is_sidebar=False)
-style.display_app_header(main_txt='<p></p> Cost and Duration Prediction in Green Building Projects using Artificial Intelligence </p>' ,
+style.display_app_header(main_txt='<p></p> Cost and Duration Prediction in Green Building Projects using Machine Learning </p>' ,
                          sub_txt="""
                          """, is_sidebar=True)
 #User Input Collection 
